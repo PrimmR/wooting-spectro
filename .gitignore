@@ -1,0 +1,4 @@
+/target
+**/options.json
+icons/icon.svg
+gallery/processing/
