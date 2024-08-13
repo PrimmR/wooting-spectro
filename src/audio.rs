@@ -44,12 +44,7 @@ pub fn setup(opt: Arc<RwLock<Options>>, rx: &Receiver<TrayMessage>) -> Result<Ex
 
     let config = device.default_output_config().expect("Failed to get default input config");
     let form = config.sample_format();
-
-    let config = cpal::StreamConfig {
-        channels: 2, ..config.into()
-
-    }
-;
+    
     format_match!(form, device, config.into(), opt, rx, I8, I16, I32, F32)
 }
 
