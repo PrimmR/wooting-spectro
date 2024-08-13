@@ -6,6 +6,8 @@ This application lives in the system tray and displays a frequency spectrum onto
 
 This project is currently a WIP - Linux support is *hopefully* coming soon. 
 
+*Disclaimer: Although I've not enountered any issues when using this program with my own keyboard, I cannot guarantee that this is the case for all setups - please use at your own risk.*
+
 ## Usage
 Firstly, download the latest release from [Releases](https://github.com/PrimmR/wooting-spectro/releases/) or [build it from source](#build) yourself.  
 
