@@ -7,7 +7,7 @@ This application lives in the system tray and displays a frequency spectrum onto
 This project is currently a WIP - Linux support is *hopefully* coming soon. 
 
 ## Usage
-Firstly, download the latest release from [Releases](releases/) or [build it from source](#build) yourself.  
+Firstly, download the latest release from [Releases](https://github.com/PrimmR/wooting-spectro/releases/) or [build it from source](#build) yourself.  
 
 You can also install this app using cargo: `cargo install --git https://github.com/PrimmR/wooting-spectro`  
 And run it by calling it from the command line.
@@ -30,3 +30,5 @@ Just download this repository, and run `cargo run --release` in the wooting-spec
 Any bug reports are greatly appreciated, however the application doesn't propagate many errors to the user on release builds. If you can, please try to recreate any error under a `dev` build, but just giving steps to recreate the issue would also be just as useful.
 
 ## Gallery
+**Showcase Video:**
+[![Showcase Video](https://raw.githubusercontent.com/PrimmR/wooting-spectro/main/gallery/ShowcaseThumb.png)](https://raw.githubusercontent.com/PrimmR/wooting-spectro/main/gallery/Showcase.mp4)
