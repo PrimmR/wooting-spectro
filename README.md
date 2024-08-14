@@ -24,8 +24,9 @@ This application lives in the system tray and displays a frequency spectrum onto
 ## Usage
 Firstly, download the latest release from [Releases](https://github.com/PrimmR/wooting-spectro/releases/) or [build it from source](#build) yourself.  
 
-You can also install this app using cargo: `cargo install --git https://github.com/PrimmR/wooting-spectro --features cli`  
-And run it by calling it from the command line.
+You can also install this app using cargo:  
+`cargo install --git https://github.com/PrimmR/wooting-spectro --features cli`  
+Then you can run it by calling `wooting-spectro` from the command line.
 
 The executable is portable but does create one other file to store user preferences, so store it in whichever directory you see fit.
 
