@@ -3695,6 +3695,7 @@ version = "0.0.1"
 dependencies = [
  "casey",
  "cpal",
+ "dirs",
  "easyfft",
  "float-ord",
  "image",

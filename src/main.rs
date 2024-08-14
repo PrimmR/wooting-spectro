@@ -20,7 +20,7 @@ pub const MAX_DB: f32 = -6.;
 pub const MIN_DB: f32 = -36.;
 pub const FREQ_RANGE: std::ops::RangeInclusive<f32> = 20.0..=16_000.0;
 
-pub const OPTIONS_PATH: &str = "./options.json";
+pub const OPTIONS_FILE: &str = "options.json";
 
 // Private imports for main
 use options::Options;
@@ -47,7 +47,7 @@ fn main() -> Result<()> {
         std::process::exit(0)
     }
 
-    let opt = Options::read_from_file(OPTIONS_PATH);
+    let opt = Options::read_from_file();
     let opt = std::sync::Arc::new(std::sync::RwLock::new(opt));
     let opt_clone = opt.clone();
 
@@ -62,7 +62,7 @@ fn main() -> Result<()> {
         let status = audio::setup(opt.clone(), &rx)?;
 
         if let ExitState::Exit(k) = status {
-            opt.read().unwrap().write_to_file(OPTIONS_PATH);
+            opt.read().unwrap().write_to_file();
             ManuallyDrop::into_inner(k); // Drop
             return Ok(());
         }

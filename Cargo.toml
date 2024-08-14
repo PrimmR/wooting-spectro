@@ -30,6 +30,7 @@ single-instance = "0.3.3"
 
 # Optional
 sdl2 = { version = "0.37.0", features = ["bundled"], optional = true }
+dirs = { version = "5.0.1", optional = true }
 
 [build-dependencies]
 image = "0.25.2"
@@ -38,3 +39,4 @@ winresource = "0.1.17"
 [features]
 window-display = ["dep:sdl2"]
 demo = []
+cli = ["dep:dirs"]
