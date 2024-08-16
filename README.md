@@ -40,7 +40,7 @@ When you've finished, make sure to quit using the tray icon menu (which can be a
 
 On Windows, this app shouldn't need any additional dependencies other than [`cargo`](https://www.rust-lang.org/tools/install), so if you find any please let me know.
 
-Just download this repository, and run `cargo run --release` in the wooting-spectro directory. The executable should be in `target/release`, where it can be moved and executed wherever you wish. 
+Just download this repository, and run `cargo build --release` in the wooting-spectro directory. The executable should be in `target/release`, where it can be moved and executed wherever you wish. 
 
 ## Issues
 Any bug reports are greatly appreciated, however the application doesn't propagate many errors to the user on release builds. If you can, please try to recreate any error under a `dev` build, but just giving steps to recreate the issue would also be just as useful.
