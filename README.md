@@ -4,15 +4,11 @@ Turn your Wooting keyboard into an audio spectrum analyser!
 
 This application lives in the system tray and displays a frequency spectrum onto the keyboard's LED matrix. There are various colour themes available to choose from.
 
+This application is currently only available for Windows, but Linux support may come eventually if some dependencies are updated.
+
 *Disclaimer: Although I've not encountered any issues when using this program with my own keyboard, I cannot guarantee that this is the case for all setups - please use at your own risk.*
 
 ## Compatibility
-
-|OS|Support|
-|---|---|  
-|Windows|Full|
-|Linux|Coming Soon|
-|macOS|Not Planned|
 
 |Wooting Device|Support|
 |---|---|  
@@ -38,7 +34,7 @@ When you've finished, make sure to quit using the tray icon menu (which can be a
 
 ## Build
 
-On Windows, this app shouldn't need any additional dependencies other than [`cargo`](https://www.rust-lang.org/tools/install), so if you find any please let me know.
+You shouldn't need any additional dependencies other than [`cargo`](https://www.rust-lang.org/tools/install), so if you find any please let me know.
 
 Just download this repository, and run `cargo build --release` in the wooting-spectro directory. The executable should be in `target/release`, where it can be moved and executed wherever you wish. 
 
