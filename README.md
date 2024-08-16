@@ -34,9 +34,12 @@ When you've finished, make sure to quit using the tray icon menu (which can be a
 
 ## Build
 
-You shouldn't need any additional dependencies other than [`cargo`](https://www.rust-lang.org/tools/install), so if you find any please let me know.
+Because the [SDK](https://github.com/WootingKb/wooting-rgb-sdk) is written in C, `libclang` needs to be installed to build this project. You can install it on Windows with the following command:  
+`winget install LLVM.LLVM`
 
-Just download this repository, and run `cargo build --release` in the wooting-spectro directory. The executable should be in `target/release`, where it can be moved and executed wherever you wish. 
+You will also need [`cargo`](https://www.rust-lang.org/tools/install), to build the main Rust application.
+
+Then you can just download this repository and run `cargo build --release` in the wooting-spectro directory. The executable should be in `target/release`, where it can be moved and executed wherever you wish. 
 
 ## Issues
 Any bug reports are greatly appreciated, however the application doesn't propagate many errors to the user on release builds. If you can, please try to recreate any error under a `dev` build, but just giving steps to recreate the issue would also be just as useful.
